@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:gravity="center"
+    tools:context=".SettingActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="47dp"
+        android:layout_height="36dp"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="122dp"
+        android:layout_height="119dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="69dp"
+        app:srcCompat="@drawable/account_foreground" />
+
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="45dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="148dp"
+        app:srcCompat="@drawable/ad_foreground" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/avatar"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="User Name:"
+            android:textColor="#FBFBFB"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter your name:"
+            android:inputType="textPersonName"
+            android:textColor="#F6F0F0"
+            android:textColorHighlight="#EDD7D7"
+            android:textColorHint="#C6C1C1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:layout_below="@+id/lin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="About"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="About"
+            android:inputType="textPersonName"
+            android:textColor="#FAF0F0"
+            android:textColorHint="#CDC7C7" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="305dp"
+        android:background="#F4F4F4"
+        android:backgroundTint="#457523"
+        android:text="Save" />
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+        android:layout_below="@+id/save"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/linear_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textVie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:drawableTint="#00796B"
+            android:padding="10dp"
+            android:text="Privacy Policy"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@android:drawable/ic_menu_help"
+            android:drawableTint="#00796B"
+            android:padding="10dp"
+            android:text="About us"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@android:drawable/star_big_on"
+            android:drawableTint="#00796B"
+            android:padding="10dp"
+            android:text="Invite a friend"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@android:drawable/stat_notify_error"
+            android:drawableTint="#00796B"
+            android:padding="10dp"
+            android:text="Notification"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="?android:attr/actionModeFindDrawable"
+            android:drawableTint="#00796B"
+            android:padding="10dp"
+            android:text="Help"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
